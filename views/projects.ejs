@@ -1,0 +1,47 @@
+<!-- Author: Rahul Parmar -->
+<!-- Student ID: 301279290-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="/public/stylesheets/projects.css" />
+  </head>
+  <header><%- include('partials/navbar.ejs') %></header>
+  <body>
+    <center>
+      <h1 style="color: orange;">My Projects &#128681</h1>
+    </center>
+    <div class="project-card">
+      <img src="/public/images/snake.webp" alt="Snake" />
+      <h2 style="color: wheat;">Feed the Snake</h2>
+      <p style="color: wheat;">
+        I love snakes. No not really. But yea we all love to feed that little snake who gets full.
+        Meet Sunny. This little buddy is waiting for you so you can feed him by moving him towards the fruit. 
+      </p>
+    </div>
+
+    <div class="project-card">
+      <img src="/public/images/mypatty.jpeg" alt="Food delivery" />
+      <h2 style="color: wheat;">Fun with Yum</h2>
+      <p style="color: wheat;">
+        Hungry! Get ready order your local food online! This epic website connects you with 
+        your local food stalls and grocery shops to get your food or grocery ready for delivery or 
+        pickup. 
+      </p>
+    </div>
+
+    <div class="project-card">
+      <img src="/public/images/aShirt.png" alt="AnimeTshirt" />
+      <h2 style="color: wheat;">aShirt</h2>
+      <p style="color: wheat;">
+       It is an ecommerce websiet helps local businesses to connect and sell their iconic anime Tshirt 
+       to their anime lovers. The order can be of pickup or of delivery. Unfortunatly the payment system cannot be
+       developed. So the only allows to order and pickup the Tshirt or cash on delivery. 
+      </p>
+    </div>
+
+    <%- include('partials/footer.ejs') %>
+  </body>
+</html>

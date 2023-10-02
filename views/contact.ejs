@@ -1,0 +1,51 @@
+<!-- Author: Rahul Parmar -->
+<!-- Student ID: 301279290-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="/public/stylesheets/contact.css" />
+  </head>
+  <header><%- include('partials/navbar.ejs') %></header>
+  <body>
+    <div class="contact-container">
+      <h1 style="color: orange;">Contact Me</h1>
+
+      <!-- All about the author,,,His contact information -->
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p><strong>Name:</strong> Rahul Parmar</p>
+        <p><strong>Email:</strong> rparmar0913@gmail.com</p>
+        <p><strong>Phone:</strong> +1 416-996-3787</p>
+        <p><strong>Address:</strong> Scarborough, ON, CANADA</p>
+      </div>
+
+      <!-- Take appointment with Rahul,,,Fill the contact form -->
+      <div class="contact-form">
+        <h2>Contact Form</h2>
+        <form action="/form-data" method="POST"></form>
+          <input type="text" id="firstName" name="firstName" placeholder="First name" required /><br>
+
+          <input type="text" id="lastName" name="lastName" placeholder="Last name" required /><br>
+
+          <input
+            type="tel"
+            id="contactNumber"
+            name="contactNumber"
+            placeholder="Contact Number"
+            required
+          /><br>
+
+          <input type="email" id="email" name="email" placeholder="email" required /><br>
+
+          <textarea id="message" name="message" rows="4" placeholder="Wanna send me a Message:" required></textarea><br>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+    <%- include('partials/footer.ejs') %>
+  </body>
+</html>

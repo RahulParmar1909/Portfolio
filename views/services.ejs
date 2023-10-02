@@ -1,0 +1,52 @@
+<!-- Author: Rahul Parmar -->
+<!-- Student ID: 301279290-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <link rel="stylesheet" href="/public/stylesheets/services.css" />
+  </head>
+  <header><%- include('partials/navbar.ejs') %></header>
+  <body>
+    <center>
+      <h1 style="color: orange;">Services &#128681</h1>
+    </center>
+    <div class="service-card">
+      <img src="/public/images/python.jpeg" alt="Python Service" />
+      <h2>Machine learning</h2>
+      <p>
+        Machine learning is the branch of dealiing with AI. Here we use intense <b>python</b> knowledge to make the system easy
+        to understand and program. 
+      </p>
+    </div>
+
+    <div class="service-card">
+      <img src="/public/images/java.png" alt="Java Service" />
+      <h2>Java</h2>
+      <p>
+        Java is a widely-used, object-oriented programming language known for its platform independence. 
+        It allows developers to write code that can run on various platforms without modification, thanks 
+        to its "Write Once, Run Anywhere" (WORA) principle. Java is often used for developing web applications, 
+        mobile apps, and other software solutions. We offer Java
+        development services for building robust and scalable enterprise
+        applications.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <img src="/public/images/javascript.png" alt="JavaScript Service" />
+      <h2>JavaScript</h2>
+      <p>
+        JavaScript is a versatile, high-level programming language primarily used for web development. 
+        It enables interactivity on websites by allowing developers to create dynamic and responsive features, 
+        such as animations, form validation, and interactive content. JavaScript is executed by web browsers, 
+        making it an essential technology for front-end web development. Our JavaScript services cover
+        front-end development, interactive web applications, and more.
+      </p>
+    </div>
+
+    <%- include('partials/footer.ejs') %>
+  </body>
+</html>

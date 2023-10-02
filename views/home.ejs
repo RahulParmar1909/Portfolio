@@ -1,0 +1,29 @@
+<!-- Author: Rahul Parmar -->
+<!-- Student ID: 301279290-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/public/stylesheets/home.css" />
+  </head>
+
+  <body>
+    <header><%- include('partials/navbar.ejs') %></header>
+
+    <main>
+      <table>
+        <th>
+          <td>
+            <img src="/public/images/profile.jpeg" alt="profile" /></td>
+          <td> <h1>Namaste! I'm Rahul Parmar, Welcome to my portfolio. I am a <b><div style="color: white;" class="changable-text"></div></b></h1></td>
+        </th>
+      </table>
+      <div class="button-container">
+        <a href="/about">Hey buddy! Interact more with me</a>
+      </div>
+    </main>
+    <%- include('partials/footer.ejs') %>
+  </body>
+</html>
